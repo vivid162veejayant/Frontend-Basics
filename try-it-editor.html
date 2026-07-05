@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try It Yourself Editor | Code for Beginners</title>
+    <meta name="description" content="Practice editing HTML and CSS in a simple live preview editor.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="editor.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <nav class="nav" aria-label="Main navigation">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">CB</span>
+                <span>Code for Beginners</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html-basics.html">HTML</a></li>
+                <li><a href="css-basics.html">CSS</a></li>
+                <li><a href="html-css-together.html">HTML + CSS</a></li>
+                <li><a class="active" href="try-it-editor.html" aria-current="page">Try It</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="page-hero">
+            <p class="eyebrow">Practice tool</p>
+            <h1>Try It Yourself Editor</h1>
+            <p>Edit HTML and CSS side by side and preview the result.</p>
+        </section>
+
+        <section class="editor-shell" aria-label="HTML and CSS editor">
+            <div class="editor-toolbar">
+                <h2>Code workspace</h2>
+                <div class="toolbar-actions">
+                    <button class="button secondary" type="button" id="resetBtn">Reset</button>
+                    <a class="button primary" href="practice.html">Practice challenges</a>
+                </div>
+            </div>
+
+            <div class="editor-grid">
+                <label class="editor-panel" for="htmlCode">
+                    <span>HTML</span>
+                    <textarea id="htmlCode" spellcheck="false"></textarea>
+                </label>
+
+                <label class="editor-panel" for="cssCode">
+                    <span>CSS</span>
+                    <textarea id="cssCode" spellcheck="false"></textarea>
+                </label>
+
+                <div class="preview-panel">
+                    <span>Preview</span>
+                    <iframe id="preview" title="Live preview" sandbox=""></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Built as a beginner HTML and CSS learning project.</p>
+        <a href="index.html">Back to home</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

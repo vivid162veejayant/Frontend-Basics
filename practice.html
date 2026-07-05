@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Challenges | Code for Beginners</title>
+    <meta name="description" content="Complete short HTML and CSS challenges and check your progress.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="editor.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <nav class="nav" aria-label="Main navigation">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">CB</span>
+                <span>Code for Beginners</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html-basics.html">HTML</a></li>
+                <li><a href="css-basics.html">CSS</a></li>
+                <li><a href="html-css-together.html">HTML + CSS</a></li>
+                <li><a class="active" href="try-it-editor.html">Try It</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="page-hero">
+            <p class="eyebrow">Practice</p>
+            <h1>HTML and CSS Challenges</h1>
+            <p>Complete the three CSS tasks and check your progress.</p>
+        </section>
+
+        <section class="challenge-layout">
+            <aside class="challenge-card" aria-labelledby="challenge-title">
+                <h2 id="challenge-title">Challenges</h2>
+                <ol class="challenge-list">
+                    <li>Change the paragraph text color.</li>
+                    <li>Center the heading at the top.</li>
+                    <li>Add a background color to the page or the box.</li>
+                </ol>
+                <button class="button primary full-width" id="checkBtn" type="button">Check challenges</button>
+                <div id="challengeResults" class="challenge-results" aria-live="polite"></div>
+            </aside>
+
+            <section class="editor-shell compact-shell" aria-label="Practice editor">
+                <div class="editor-toolbar">
+                    <h2>Practice workspace</h2>
+                    <button class="button secondary" type="button" id="resetBtn">Reset</button>
+                </div>
+
+                <div class="editor-grid">
+                    <label class="editor-panel" for="htmlCode">
+                        <span>HTML</span>
+                        <textarea id="htmlCode" spellcheck="false"></textarea>
+                    </label>
+
+                    <label class="editor-panel" for="cssCode">
+                        <span>CSS</span>
+                        <textarea id="cssCode" spellcheck="false"></textarea>
+                    </label>
+
+                    <div class="preview-panel">
+                        <span>Preview</span>
+                        <iframe id="preview" title="Challenge preview" sandbox=""></iframe>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Built as a beginner HTML and CSS learning project.</p>
+        <a href="try-it-editor.html">Back to editor</a>
+    </footer>
+
+    <script src="practice.js"></script>
+</body>
+</html>

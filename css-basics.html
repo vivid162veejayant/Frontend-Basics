@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lesson 02 — CSS Basics</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#">
+        <span class="brand-mark">L2</span>
+        <span class="brand-name">CSS Basics</span>
+      </a>
+
+      <div class="nav-links" role="navigation" aria-label="Lesson links">
+        <a class="active" href="#what-is-css">Lesson 02</a>
+        <a href="#syntax">Syntax</a>
+        <a href="#selectors">Selectors</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="lesson" tabindex="-1">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow">Lesson 02</p>
+        <h1 id="hero-title" class="page-hero">CSS Basics</h1>
+        <p class="hero-lede">Learn how CSS styles HTML — the design layer for the web.</p>
+      </div>
+    </section>
+
+    <!-- Section 1 -->
+    <section id="what-is-css" class="lesson-section section" aria-labelledby="c1">
+      <h3 id="c1">Section 1 - What is CSS?</h3>
+
+      <div class="feature-card topic">
+        <h4>📖 Explanation</h4>
+        <p><strong>CSS</strong> stands for <em>Cascading Style Sheets</em>. CSS controls the appearance of HTML. HTML = structure. CSS = design.</p>
+
+        <h4>💻 Code Example</h4>
+        <div class="code-block" data-code-id="css-what-1">
+          <code>h1{
+    color: blue;
+}</code>
+          <div style="margin-top:0.6rem;">
+            <button class="button secondary run" data-target="preview-css-what">Run</button>
+            <button class="button secondary copy" data-copy-target="css-what-1">Copy</button>
+          </div>
+        </div>
+
+        <h4>👀 Output</h4>
+        <div id="preview-css-what" class="output preview-box" aria-live="polite" style="padding:1rem; background:var(--paper-soft); border-radius:8px;">
+          <h1>Example heading</h1>
+        </div>
+
+        <h4>💡 Tip</h4>
+        <p>Think: HTML builds the page, CSS makes it look good.</p>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section id="syntax" class="lesson-section section" aria-labelledby="c2">
+      <h3 id="c2">Section 2 - CSS Syntax</h3>
+
+      <div class="feature-card topic">
+        <h4>📖 Explanation</h4>
+        <p>Every CSS rule has a <strong>selector</strong>, and a block of <strong>declarations</strong> made of <strong>property</strong> and <strong>value</strong>.</p>
+
+        <h4>💻 Code Example</h4>
+        <div class="code-block" data-code-id="css-syntax-1">
+          <code>p{
+    color: red;
+}</code>
+          <div style="margin-top:0.6rem;">
+            <button class="button secondary run" data-target="preview-css-syntax">Run</button>
+            <button class="button secondary copy" data-copy-target="css-syntax-1">Copy</button>
+          </div>
+        </div>
+
+        <h4>👀 Output</h4>
+        <div id="preview-css-syntax" class="output preview-box" aria-live="polite" style="padding:1rem; background:var(--paper-soft); border-radius:8px;">
+          <p>This paragraph will become red when you run the example.</p>
+        </div>
+
+        <h4>💻 Diagram</h4>
+        <pre style="background:var(--paper-soft); padding:0.8rem; border-radius:8px;">
+p {
+  color: red;
+}
+
+↑
+Selector
+
+      ↑
+   Property
+
+             ↑
+           Value
+        </pre>
+
+        <h4>💡 Tip</h4>
+        <p>Every declaration ends with a semicolon <code>;</code>.</p>
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section id="selectors" class="lesson-section section" aria-labelledby="c3">
+      <h3 id="c3">Section 3 - Selectors</h3>
+
+      <div class="feature-card topic">
+        <h4>📖 Explanation</h4>
+        <p>Basic selectors let you target elements: element selectors, class selectors, and ID selectors.</p>
+
+        <h4>💻 Code Example</h4>
+        <div class="code-block" data-code-id="css-selectors-1">
+          <code>h1{
+    color: green;
+}
+
+.title{
+    font-size: 30px;
+}
+
+#main{
+    background: black;
+    color: white;
+}</code>
+          <div style="margin-top:0.6rem;">
+            <button class="button secondary run" data-target="preview-css-selectors">Run</button>
+            <button class="button secondary copy" data-copy-target="css-selectors-1">Copy</button>
+          </div>
+        </div>
+
+        <h4>👀 Output</h4>
+        <div id="preview-css-selectors" class="output preview-box" aria-live="polite" style="padding:1rem; background:var(--paper-soft); border-radius:8px;">
+          <div id="main" style="padding:0.6rem;">
+            <h1 class="title">Green heading with .title</h1>
+            <p class="muted">The #main area has a dark background.</p>
+          </div>
+        </div>
+
+        <h4>💡 Tip</h4>
+        <p>Use classes for reusable styles and IDs for unique elements on the page.</p>
+      </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section id="colors" class="lesson-section section" aria-labelledby="c4">
+      <h3 id="c4">Section 4 - Colors</h3>
+
+      <div class="feature-card topic">
+        <h4>📖 Explanation</h4>
+        <p>Use <code>color</code> for text color and <code>background-color</code> for element backgrounds.</p>
+
+        <h4>💻 Code Example</h4>
+        <div class="code-block" data-code-id="css-colors-1">
+          <code>body{
+    background-color: lightblue;
+}
+
+h1{
+    color: darkblue;
+}</code>
+          <div style="margin-top:0.6rem;">
+            <button class="button secondary run" data-target="preview-css-colors">Run</button>
+            <button class="button secondary copy" data-copy-target="css-colors-1">Copy</button>
+          </div>
+        </div>
+
+        <h4>👀 Output</h4>
+        <div id="preview-css-colors" class="output preview-box" aria-live="polite" style="padding:1rem; border-radius:8px;">
+          <div style="padding:1rem; background:lightblue;">
+            <h1 style="color:darkblue; margin:0;">Blue page heading</h1>
+            <p class="muted">The page background is light blue.</p>
+          </div>
+        </div>
+
+        <h4>💡 Tip</h4>
+        <p>Use named colors, hex, rgb, or hsl — whichever you find easiest to read and maintain.</p>
+      </div>
+    </section>
+
+    <!-- Section 5 -->
+    <section id="fonts" class="lesson-section section" aria-labelledby="c5">
+      <h3 id="c5">Section 5 - Fonts</h3>
+
+      <div class="feature-card topic">
+        <h4>📖 Explanation</h4>
+        <p>Control typography with <code>font-size</code>, <code>font-family</code>, and <code>font-weight</code>.</p>
+
+        <h4>💻 Code Example</h4>
+        <div class="code-block" data-code-id="css-fonts-1">
+          <code>p{
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}</code>
+          <div style="margin-top:0.6rem;">
+            <button class="button secondary run" data-target="preview-css-fonts">Run</button>
+            <button class="button secondary copy" data-copy-target="css-fonts-1">Copy</button>
+          </div>
+        </div>
+
+        <h4>👀 Output</h4>
+        <div id="preview-css-fonts" class="output preview-box" aria-live="polite" style="padding:1rem; background:var(--paper-soft); border-radius:8px;">
+          <p style="font-size:20px; font-family:Arial, sans-serif; font-weight:bold; margin:0;">This is a large bold paragraph.</p>
+        </div>
+
+        <h4>💡 Tip</h4>
+        <p>Provide fallback fonts (e.g., <code>Arial, sans-serif</code>) so text looks consistent across systems.</p>
+      </div>
+    </section>
+
+    <!-- Section 6 -->
+    <section id="backgrounds" class="lesson-section section" aria-labelledby="c6">
+      <h3 id="c6">Section 6 - Backgrounds</h3>
+
+      <div class="feature-card topic">
+        <h4>📖 Explanation</h4>
+        <p>Backgrounds can be simple colors or images. We'll keep it basic: <code>background-color</code> and <code>background-image</code>.</p>
+
+        <h4>💻 Code Example</h4>
+        <div class="code-block" data-code-id="css-backgrounds-1">
+          <code>body{
+    background-color: #eeeeee;
+}</code>
+          <div style="margin-top:0.6rem;">
+            <button class="button secondary run" data-target="preview-css-backgrounds">Run</button>
+            <button class="button secondary copy" data-copy-target="css-backgrounds-1">Copy</button>
+          </div>
+        </div>
+
+        <h4>👀 Output</h4>
+        <div id="preview-css-backgrounds" class="output preview-box" aria-live="polite" style="padding:1rem; background:var(--paper-soft); border-radius:8px;">
+          <div style="background:#eeeeee; padding:0.8rem; border-radius:6px;">
+            <p style="margin:0;">Page with a light gray background.</p>
+          </div>
+        </div>
+
+        <h4>💡 Tip</h4>
+        <p>Keep backgrounds subtle for better readability. Gradients and complex images can come later.</p>
+      </div>
+    </section>
+
+    <!-- Section 7 -->
+    <section id="spacing" class="lesson-section section" aria-labelledby="c7">
+      <h3 id="c7">Section 7 - Margin & Padding</h3>
+
+      <div class="feature-card topic">
+        <h4>📖 Explanation</h4>
+        <p><strong>Margin</strong> creates space outside an element. <strong>Padding</strong> creates space inside an element.</p>
+
+        <h4>💻 Diagram</h4>
+        <pre style="background:var(--paper-soft); padding:0.8rem; border-radius:8px;">
++-------------------------+
+|       Margin            |
+|  +-------------------+  |
+|  |     Border        |  |
+|  | +---------------+ |  |
+|  | |   Padding     | |  |
+|  | | +-----------+ | |  |
+|  | | | Content   | | |  |
+|  | | +-----------+ | |  |
+|  | +---------------+ |  |
+|  +-------------------+  |
++-------------------------+
+        </pre>
+
+        <h4>💻 Code Example</h4>
+        <div class="code-block" data-code-id="css-spacing-1">
+          <code>div{
+    margin: 20px;
+    padding: 20px;
+}</code>
+          <div style="margin-top:0.6rem;">
+            <button class="button secondary run" data-target="preview-css-spacing">Run</button>
+            <button class="button secondary copy" data-copy-target="css-spacing-1">Copy</button>
+          </div>
+        </div>
+
+        <h4>👀 Output</h4>
+        <div id="preview-css-spacing" class="output preview-box" aria-live="polite" style="padding:1rem; background:var(--paper-soft); border-radius:8px;">
+          <div style="margin:20px; padding:20px; border:1px dashed var(--line); background:#fff;">
+            <p style="margin:0;">Box with margin outside and padding inside.</p>
+          </div>
+        </div>
+
+        <h4>💡 Tip</h4>
+        <p>Use margin to separate elements from others; use padding to give content breathing room inside its box.</p>
+      </div>
+    </section>
+
+    <!-- Section 8 -->
+    <section id="borders" class="lesson-section section" aria-labelledby="c8">
+      <h3 id="c8">Section 8 - Borders</h3>
+
+      <div class="feature-card topic">
+        <h4>📖 Explanation</h4>
+        <p>Use <code>border</code> to draw lines around elements and <code>border-radius</code> to round corners.</p>
+
+        <h4>💻 Code Example</h4>
+        <div class="code-block" data-code-id="css-borders-1">
+          <code>div{
+    border: 2px solid black;
+    border-radius: 10px;
+}</code>
+          <div style="margin-top:0.6rem;">
+            <button class="button secondary run" data-target="preview-css-borders">Run</button>
+            <button class="button secondary copy" data-copy-target="css-borders-1">Copy</button>
+          </div>
+        </div>
+
+        <h4>👀 Output</h4>
+        <div id="preview-css-borders" class="output preview-box" aria-live="polite" style="padding:1rem; background:var(--paper-soft); border-radius:8px;">
+          <div style="border:2px solid black; border-radius:10px; padding:12px; background:#fff;">
+            <p style="margin:0;">Rounded bordered box</p>
+          </div>
+        </div>
+
+        <h4>💡 Tip</h4>
+        <p>Combine border styles, widths, and radii to create subtle UI elements.</p>
+      </div>
+    </section>
+
+    <!-- Section 9 -->
+    <section id="external-css" class="lesson-section section" aria-labelledby="c9">
+      <h3 id="c9">Section 9 - External CSS</h3>
+
+      <div class="feature-card topic">
+        <h4>📖 Explanation</h4>
+        <p>Keeping CSS in a separate file (<code>styles.css</code>) keeps your project organized and makes styles reusable across pages.</p>
+
+        <h4>💻 Example files</h4>
+        <div class="code-block" data-code-id="external-html">
+          <code>&lt;!-- index.html --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;
+  &lt;title&gt;External CSS Example&lt;/title&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hello with external CSS&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code>
+          <div style="margin-top:0.6rem;">
+            <button class="button secondary copy" data-copy-target="external-html">Copy index.html</button>
+          </div>
+        </div>
+
+        <div class="code-block" data-code-id="external-css">
+          <code>/* styles.css */
+h1{
+    color: purple;
+}</code>
+          <div style="margin-top:0.6rem;">
+            <button class="button secondary copy" data-copy-target="external-css">Copy styles.css</button>
+          </div>
+        </div>
+
+        <h4>👀 Note</h4>
+        <div style="padding:0.8rem; background:var(--paper-soft); border-radius:8px;">
+          <strong>📄 This example uses two separate files (index.html and styles.css).</strong>
+          <p style="margin:0.4rem 0 0;">Copy both examples into separate files to see the result in your browser. There is no single-run preview here because the files must be saved separately.</p>
+        </div>
+
+        <h4>💡 Tip</h4>
+        <p>External CSS is the real-world workflow — it keeps HTML clean and styles centralized.</p>
+      </div>
+    </section>
+
+    <!-- Section 10 -->
+    <section id="summary" class="lesson-section section" aria-labelledby="c10">
+      <h3 id="c10">Section 10 - Summary</h3>
+
+      <div class="feature-card topic">
+        <h4>📖 Explanation</h4>
+        <p>Quick review of what you learned about CSS basics.</p>
+
+        <h4>💻 Key points</h4>
+        <ul class="content-list">
+          <li>CSS styles HTML.</li>
+          <li>CSS uses selectors to target elements.</li>
+          <li>Properties change appearance (color, fonts, spacing).</li>
+          <li>External CSS keeps projects organized.</li>
+          <li>Margin creates outside space; padding creates inside space.</li>
+          <li>Borders surround elements and can be rounded.</li>
+        </ul>
+
+        <h4>💡 Tip</h4>
+        <p>Practice by styling small pages. Start with layout and spacing, then refine colors and typography.</p>
+      </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="section bottom-cta" aria-label="Next lesson">
+      <div class="next-step">
+        <div>
+          <h2 style="margin:0;">Ready for the next lesson?</h2>
+          <p class="muted" style="margin:0.4rem 0 0;">HTML + CSS Together will show how structure and design work as a team.</p>
+        </div>
+        <div>
+          <button id="next-lesson" class="button primary full-width">Next Lesson — HTML + CSS Together →</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p class="muted">Lesson 02 • CSS Basics</p>
+    </div>
+  </footer>
+
+  <!-- Inline JavaScript (all logic inside this HTML file) -->
+  <script>
+    (function () {
+      // Helper: get code text from a code-block element
+      function getCodeText(codeBlock) {
+        var codeEl = codeBlock.querySelector('code');
+        return codeEl ? codeEl.textContent.replace(/\r\n/g, '\n').trim() : '';
+      }
+
+      // Run CSS examples inside an isolated iframe
+document.querySelectorAll(".run").forEach(function(btn){
+
+    btn.addEventListener("click", function(){
+
+        var target = document.getElementById(
+            btn.dataset.target
+        );
+
+        if(!target) return;
+
+        var codeBlock = btn.closest(".code-block");
+        var css = codeBlock.querySelector("code").textContent;
+
+        // Create iframe
+        var frame = document.createElement("iframe");
+
+        frame.style.width = "100%";
+        frame.style.height = "180px";
+        frame.style.border = "1px solid #ccc";
+        frame.style.borderRadius = "8px";
+        frame.style.background = "white";
+
+        target.innerHTML = "";
+        target.appendChild(frame);
+
+        var doc = frame.contentDocument || frame.contentWindow.document;
+
+        doc.open();
+
+        doc.write(`
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    font-family:Arial,sans-serif;
+    padding:20px;
+}
+
+${css}
+</style>
+</head>
+
+<body>
+
+<h1 class="title">Example Heading</h1>
+
+<p>This is an example paragraph.</p>
+
+<div id="main">
+    Main Container
+</div>
+
+<div class="box">
+    Example Box
+</div>
+
+</body>
+</html>
+`);
+
+        doc.close();
+
+    });
+
+});
+
+      // Copy code to clipboard with feedback
+      document.querySelectorAll('button.copy').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var target = btn.getAttribute('data-copy-target');
+          var codeBlock = document.querySelector('.code-block[data-code-id="' + target + '"]');
+          // For external files where data-code-id is not set, fallback to closest code-block
+          if (!codeBlock) {
+            codeBlock = btn.closest('.code-block');
+          }
+          if (!codeBlock) return;
+          var code = getCodeText(codeBlock);
+
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(code).then(function () {
+              var original = btn.textContent;
+              btn.textContent = 'Copied';
+              setTimeout(function () { btn.textContent = original; }, 1400);
+            }, function () {
+              fallbackCopy(code, btn);
+            });
+          } else {
+            fallbackCopy(code, btn);
+          }
+        });
+      });
+
+      function fallbackCopy(text, btn) {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.left = '-9999px';
+        document.body.appendChild(ta);
+        ta.select();
+        try {
+          document.execCommand('copy');
+          var original = btn.textContent;
+          btn.textContent = 'Copied';
+          setTimeout(function () { btn.textContent = original; }, 1400);
+        } catch (e) {
+          alert('Copy failed. Select and copy manually.');
+        }
+        document.body.removeChild(ta);
+      }
+
+      // Next lesson button feedback
+      var nextBtn = document.getElementById('next-lesson');
+      if (nextBtn) {
+        nextBtn.addEventListener('click', function () {
+          nextBtn.disabled = true;
+          var prev = nextBtn.textContent;
+          nextBtn.textContent = 'Loading…';
+          setTimeout(function () {
+            nextBtn.disabled = false;
+            nextBtn.textContent = prev;
+            location.href = 'html-css-together.html';
+          }, 700);
+        });
+      }
+
+      // Auto-run the first example so the page looks active
+      var firstRun = document.querySelector('button.run');
+      if (firstRun) firstRun.click();
+    })();
+  </script>
+</body>
+</html>

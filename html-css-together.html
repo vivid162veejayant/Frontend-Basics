@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML + CSS Together | Code for Beginners</title>
+    <meta name="description" content="Understand how HTML and CSS work together to create structured, styled web pages.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <nav class="nav" aria-label="Main navigation">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">CB</span>
+                <span>Code for Beginners</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html-basics.html">HTML</a></li>
+                <li><a href="css-basics.html">CSS</a></li>
+                <li><a class="active" href="html-css-together.html" aria-current="page">HTML + CSS</a></li>
+                <li><a href="try-it-editor.html">Try It</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="page-hero">
+            <p class="eyebrow">Lesson 03</p>
+            <h1>HTML + CSS Together</h1>
+            <p>HTML creates the page. CSS makes it readable, usable, and visually clear.</p>
+        </section>
+
+        <article class="lesson">
+            <section>
+                <h2>How they work together</h2>
+                <p>
+                    HTML and CSS are designed to work as a team. HTML creates the
+                    <strong>structure and content</strong> of a web page. CSS controls the
+                    <strong>appearance</strong> of that content, including colors, fonts,
+                    spacing, alignment, and layout.
+                </p>
+
+                <div class="formula">
+                    <p><strong>HTML</strong> = what is on the page</p>
+                    <p><strong>CSS</strong> = how the page looks</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>How CSS styles HTML</h2>
+                <p>
+                    CSS selects HTML elements and applies visual rules to them. It does not create
+                    the content. It changes how existing content appears in the browser.
+                </p>
+                <ul class="content-list">
+                    <li>CSS can change the color of headings.</li>
+                    <li>CSS can adjust spacing between sections.</li>
+                    <li>CSS can center text or images.</li>
+                    <li>CSS can add backgrounds, borders, and layout rules.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Before and after styling</h2>
+                <div class="compare-grid">
+                    <div class="info-panel">
+                        <h3>HTML only</h3>
+                        <ul class="content-list compact">
+                            <li>Text uses browser default styling.</li>
+                            <li>Spacing is limited.</li>
+                            <li>Content is usually left aligned.</li>
+                            <li>The page can feel unfinished.</li>
+                        </ul>
+                    </div>
+                    <div class="info-panel accent-panel">
+                        <h3>HTML + CSS</h3>
+                        <ul class="content-list compact">
+                            <li>Headings stand out clearly.</li>
+                            <li>Text is easier to read.</li>
+                            <li>Sections are visually separated.</li>
+                            <li>The design feels more professional.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Why using both matters</h2>
+                <ul class="content-list">
+                    <li>HTML keeps content structured and meaningful.</li>
+                    <li>CSS lets you control design without rewriting content.</li>
+                    <li>External styles make multiple pages feel consistent.</li>
+                    <li>Good styling improves readability and user experience.</li>
+                </ul>
+            </section>
+
+            <section class="next-step">
+                <div>
+                    <p class="eyebrow">Practice</p>
+                    <h2>Try changing HTML and CSS yourself</h2>
+                    <p>Use the editor to experiment with structure and style in one place.</p>
+                </div>
+                <a class="button primary" href="try-it-editor.html">Open the editor</a>
+            </section>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <p>Built as a beginner HTML and CSS learning project.</p>
+        <a href="index.html">Back to home</a>
+    </footer>
+</body>
+</html>

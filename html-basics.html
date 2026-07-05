@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lesson 01 — HTML Basics</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#">
+        <span class="brand-mark">L1</span>
+        <span class="brand-name">HTML Basics</span>
+      </a>
+
+      <div class="nav-links" role="navigation" aria-label="Lesson links">
+        <a class="active" href="#what-is-html">Lesson 01</a>
+        <a href="#why-html">Why HTML</a>
+        <a href="#document-structure">Structure</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="lesson" tabindex="-1">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow">Lesson 01</p>
+        <h1 id="hero-title" class="page-hero">HTML Basics</h1>
+        <p class="hero-lede">Learn the language that gives every webpage its structure.</p>
+      </div>
+    </section>
+
+    <!-- Section 1 -->
+    <section id="what-is-html" class="lesson-section section" aria-labelledby="s1">
+      <h3 id="s1">Section 1 - What is HTML?</h3>
+
+      <div class="feature-card topic">
+        <h4>📖 Explanation</h4>
+        <p><strong>HTML</strong> stands for <em>HyperText Markup Language</em>. It is the standard language used to create webpages and defines the structure of a page.</p>
+
+        <h4>💻 Code Example</h4>
+        <div class="code-block" data-code-id="example-hello">
+          <code>&lt;h1&gt;Hello World&lt;/h1&gt;
+&lt;p&gt;My first webpage.&lt;/p&gt;</code>
+          <div style="margin-top:0.6rem;">
+            <button class="button secondary run" data-target="preview-hello">Run</button>
+            <button class="button secondary copy" data-copy-target="example-hello">Copy</button>
+          </div>
+        </div>
+
+        <h4>👀 Output</h4>
+        <div id="preview-hello" class="output preview-box" aria-live="polite" style="padding:1rem; background:var(--paper-soft); border-radius:8px;"></div>
+
+        <h4>💡 Tip</h4>
+        <p><strong>HTML creates the content, not the design.</strong> Use CSS to style how content looks.</p>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section id="why-html" class="lesson-section section" aria-labelledby="s2">
+      <h3 id="s2">Section 2 - Why HTML is Important</h3>
+
+      <div class="feature-card topic">
+        <h4>📖 Explanation</h4>
+        <p>Without HTML a browser would have no way to know what is a heading, paragraph, link, or image. HTML is the foundation of every website.</p>
+
+        <h4>💻 Code Example</h4>
+        <div class="code-block" data-code-id="example-why">
+          <code>&lt;h1&gt;No HTML?&lt;/h1&gt;
+&lt;p&gt;Then there would be no headings, paragraphs, links, images, or websites.&lt;/p&gt;</code>
+          <div style="margin-top:0.6rem;">
+            <button class="button secondary run" data-target="preview-why">Run</button>
+            <button class="button secondary copy" data-copy-target="example-why">Copy</button>
+          </div>
+        </div>
+
+        <h4>👀 Output</h4>
+        <div id="preview-why" class="output preview-box" aria-live="polite" style="padding:1rem; background:var(--paper-soft); border-radius:8px;"></div>
+
+        <h4>💡 Tip</h4>
+        <div class="info-panel" style="margin-top:0.6rem; padding:0.8rem;">
+          <strong>Info</strong>
+          <p style="margin:0.4rem 0 0;">Think of HTML as the skeleton of a webpage — it gives structure and meaning.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+<section id="document-structure" class="lesson-section section" aria-labelledby="s3">
+  <h3 id="s3">Section 3 - HTML Document Structure</h3>
+
+  <div class="feature-card topic">
+    <h4>📖 Explanation</h4>
+
+    <p>
+      Every HTML webpage begins with the same basic structure. It tells the browser
+      where the page starts, where information about the page is stored, and where
+      the visible content belongs.
+    </p>
+
+    <p>
+      Don't worry if you don't understand every tag yet. You'll use this template
+      for almost every HTML page you create.
+    </p>
+
+    <h4>💻 Code Example</h4>
+
+    <div class="code-block" data-code-id="example-structure">
+<code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;My First Webpage&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;This is my first webpage.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code>
+
+      <div style="margin-top:0.6rem;">
+        <button class="button secondary copy" data-copy-target="example-structure">
+          Copy Code
+        </button>
+      </div>
+    </div>
+
+    <h4>🧪 Try It Yourself</h4>
+
+    <div class="info-panel" style="margin-top:0.75rem; padding:1rem;">
+      <p><strong>Build your first real webpage.</strong></p>
+
+      <ol class="content-list">
+        <li>Click <strong>Copy Code</strong>.</li>
+        <li>Open <strong>Notepad</strong> or <strong>Visual Studio Code</strong>.</li>
+        <li>Paste the copied code.</li>
+        <li>Save the file as <code>index.html</code>.</li>
+        <li>Double-click the file to open it in your web browser.</li>
+      </ol>
+
+      <p style="margin-top:1rem;">
+        You should see a page with a heading saying
+        <strong>Hello World!</strong> and a paragraph below it.
+      </p>
+    </div>
+
+    <h4>📋 Tag Reference</h4>
+
+    <table class="tag-table" style="width:100%; border-collapse:collapse; margin-top:0.6rem;">
+      <thead>
+        <tr>
+          <th style="text-align:left; padding:0.6rem; border-bottom:1px solid var(--line);">
+            Tag
+          </th>
+          <th style="text-align:left; padding:0.6rem; border-bottom:1px solid var(--line);">
+            Purpose
+          </th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td style="padding:0.6rem; border-bottom:1px solid var(--line);">
+            &lt;!DOCTYPE html&gt;
+          </td>
+          <td style="padding:0.6rem; border-bottom:1px solid var(--line);">
+            Tells the browser this is an HTML5 document.
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:0.6rem; border-bottom:1px solid var(--line);">
+            &lt;html&gt;
+          </td>
+          <td style="padding:0.6rem; border-bottom:1px solid var(--line);">
+            The root element that contains the entire webpage.
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:0.6rem; border-bottom:1px solid var(--line);">
+            &lt;head&gt;
+          </td>
+          <td style="padding:0.6rem; border-bottom:1px solid var(--line);">
+            Stores information about the webpage that isn't displayed.
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:0.6rem; border-bottom:1px solid var(--line);">
+            &lt;title&gt;
+          </td>
+          <td style="padding:0.6rem; border-bottom:1px solid var(--line);">
+            Sets the text shown on the browser tab.
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:0.6rem; border-bottom:1px solid var(--line);">
+            &lt;body&gt;
+          </td>
+          <td style="padding:0.6rem;">
+            Contains everything that appears on the webpage.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h4>💡 Tip</h4>
+
+    <p>
+      Every website starts with this basic template. As you learn more HTML,
+      you'll mostly add new elements inside the <code>&lt;body&gt;</code> section.
+    </p>
+
+  </div>
+</section>
+
+    <!-- Sections 4–9 condensed but following same pattern -->
+    <section id="headings" class="lesson-section section" aria-labelledby="s4">
+      <h3 id="s4">Section 4 - Headings</h3>
+      <div class="feature-card topic">
+        <h4>📖 Explanation</h4>
+        <p>Headings (<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>) organize content and create a clear hierarchy. Use one <code>&lt;h1&gt;</code> per page.</p>
+
+        <h4>💻 Code Example</h4>
+        <div class="code-block" data-code-id="example-headings">
+          <code>&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h2&gt;Sub Heading&lt;/h2&gt;
+&lt;h3&gt;Small Heading&lt;/h3&gt;</code>
+          <div style="margin-top:0.6rem;">
+            <button class="button secondary run" data-target="preview-headings">Run</button>
+            <button class="button secondary copy" data-copy-target="example-headings">Copy</button>
+          </div>
+        </div>
+
+        <h4>👀 Output</h4>
+        <div id="preview-headings" class="output preview-box" aria-live="polite" style="padding:1rem; background:var(--paper-soft); border-radius:8px;"></div>
+
+        <h4>💡 Tip</h4>
+        <p>Use headings to reflect document structure. Screen readers and search engines rely on them.</p>
+      </div>
+    </section>
+
+    <section id="paragraphs" class="lesson-section section" aria-labelledby="s5">
+      <h3 id="s5">Section 5 - Paragraphs</h3>
+      <div class="feature-card topic">
+        <h4>📖 Explanation</h4>
+        <p>Paragraphs (<code>&lt;p&gt;</code>) group sentences into readable blocks. Use them for normal text content.</p>
+
+        <h4>💻 Code Example</h4>
+        <div class="code-block" data-code-id="example-paragraph">
+          <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+          <div style="margin-top:0.6rem;">
+            <button class="button secondary run" data-target="preview-paragraph">Run</button>
+            <button class="button secondary copy" data-copy-target="example-paragraph">Copy</button>
+          </div>
+        </div>
+
+        <h4>👀 Output</h4>
+        <div id="preview-paragraph" class="output preview-box" aria-live="polite" style="padding:1rem; background:var(--paper-soft); border-radius:8px;"></div>
+
+        <h4>💡 Tip</h4>
+        <p>Use paragraphs for blocks of text. Avoid using multiple <code>&lt;br&gt;</code> tags to create paragraphs.</p>
+      </div>
+    </section>
+
+    <section id="links" class="lesson-section section" aria-labelledby="s6">
+      <h3 id="s6">Section 6 - Links</h3>
+      <div class="feature-card topic">
+        <h4>📖 Explanation</h4>
+        <p>Links are created with the <code>&lt;a&gt;</code> tag. The <code>href</code> attribute sets the destination, and the link text is what users click.</p>
+
+        <h4>💻 Code Example</h4>
+        <div class="code-block" data-code-id="example-links">
+          <code>&lt;a href="https://example.com"&gt;
+  Visit Example
+&lt;/a&gt;</code>
+          <div style="margin-top:0.6rem;">
+            <button class="button secondary run" data-target="preview-links">Run</button>
+            <button class="button secondary copy" data-copy-target="example-links">Copy</button>
+          </div>
+        </div>
+
+        <h4>👀 Output</h4>
+        <div id="preview-links" class="output preview-box" aria-live="polite" style="padding:1rem; background:var(--paper-soft); border-radius:8px;"></div>
+
+        <h4>💡 Tip</h4>
+        <p>Use descriptive link text so users know where the link goes (avoid "click here").</p>
+      </div>
+    </section>
+
+    <section id="images" class="lesson-section section" aria-labelledby="s7">
+      <h3 id="s7">Section 7 - Images</h3>
+      <div class="feature-card topic">
+        <h4>📖 Explanation</h4>
+        <p>Images are added with the <code>&lt;img&gt;</code> tag. Use <code>src</code> for the image path and <code>alt</code> to describe the image for accessibility.</p>
+
+        <h4>💻 Code Example</h4>
+        <div class="code-block" data-code-id="example-images">
+          <code>&lt;img src="cat.jpg" alt="Cat"&gt;</code>
+          <div style="margin-top:0.6rem;">
+            <button class="button secondary run" data-target="preview-images">Run</button>
+            <button class="button secondary copy" data-copy-target="example-images">Copy</button>
+          </div>
+        </div>
+
+        <h4>👀 Output</h4>
+        <div id="preview-images" class="output preview-box" aria-live="polite" style="padding:1rem; background:var(--paper-soft); border-radius:8px;">
+          <p class="muted">Image preview will show here when you run the example. Replace <code>cat.jpg</code> with a real image path.</p>
+        </div>
+
+        <h4>💡 Tip</h4>
+        <p>Always include meaningful <code>alt</code> text for accessibility and SEO.</p>
+      </div>
+    </section>
+
+    <section id="lists" class="lesson-section section" aria-labelledby="s8">
+      <h3 id="s8">Section 8 - Lists</h3>
+      <div class="feature-card topic">
+        <h4>📖 Explanation</h4>
+        <p>Use unordered lists (<code>&lt;ul&gt;</code>) for items without order and ordered lists (<code>&lt;ol&gt;</code>) when sequence matters.</p>
+
+        <h4>💻 Code Example</h4>
+        <div class="code-block" data-code-id="example-lists">
+          <code>&lt;!-- Unordered --&gt;
+&lt;ul&gt;
+  &lt;li&gt;Apple&lt;/li&gt;
+  &lt;li&gt;Banana&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- Ordered --&gt;
+&lt;ol&gt;
+  &lt;li&gt;Wake up&lt;/li&gt;
+  &lt;li&gt;Code&lt;/li&gt;
+&lt;/ol&gt;</code>
+          <div style="margin-top:0.6rem;">
+            <button class="button secondary run" data-target="preview-lists">Run</button>
+            <button class="button secondary copy" data-copy-target="example-lists">Copy</button>
+          </div>
+        </div>
+
+        <h4>👀 Output</h4>
+        <div id="preview-lists" class="output preview-box" aria-live="polite" style="padding:1rem; background:var(--paper-soft); border-radius:8px;"></div>
+
+        <h4>💡 Tip</h4>
+        <p>Use lists for related items — they improve readability and accessibility.</p>
+      </div>
+    </section>
+
+    <section id="semantic-html" class="lesson-section section" aria-labelledby="s9">
+      <h3 id="s9">Section 9 - Semantic HTML</h3>
+      <div class="feature-card topic">
+        <h4>📖 Explanation</h4>
+        <p>Semantic elements give meaning to the page structure. Examples include <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code>.</p>
+
+        <h4>💻 Code Example</h4>
+        <div class="code-block" data-code-id="example-semantic">
+          <code>&lt;header&gt;...&lt;/header&gt;
+&lt;nav&gt;...&lt;/nav&gt;
+&lt;main&gt;
+  &lt;section&gt;...&lt;/section&gt;
+&lt;/main&gt;
+&lt;footer&gt;...&lt;/footer&gt;</code>
+          <div style="margin-top:0.6rem;">
+            <button class="button secondary run" data-target="preview-semantic">Run</button>
+            <button class="button secondary copy" data-copy-target="example-semantic">Copy</button>
+          </div>
+        </div>
+
+        <h4>👀 Output</h4>
+        <div id="preview-semantic" class="output preview-box" aria-live="polite" style="padding:1rem; background:var(--paper-soft); border-radius:8px;"></div>
+
+        <h4>💡 Tip</h4>
+        <p>Semantic HTML helps screen readers and search engines understand your content.</p>
+
+        <h4>Small diagram</h4>
+        <pre class="diagram" style="background:var(--paper-soft); padding:0.8rem; border-radius:8px;">
++----------------+
+| Header         |
++----------------+
+| Navigation     |
++----------------+
+| Main           |
+| Section        |
+| Article        |
++----------------+
+| Footer         |
++----------------+
+        </pre>
+      </div>
+    </section>
+
+    <!-- Summary -->
+    <section id="summary" class="lesson-section section" aria-labelledby="s10">
+      <h3 id="s10">Section 10 - Summary</h3>
+      <div class="feature-card topic">
+        <h4>📖 Explanation</h4>
+        <p>In this lesson you learned the basics of HTML and the building blocks used to create webpages.</p>
+
+        <h4>💻 Key points</h4>
+        <ul class="content-list">
+          <li>What HTML is</li>
+          <li>Basic document structure</li>
+          <li>Headings</li>
+          <li>Paragraphs</li>
+          <li>Links</li>
+          <li>Images</li>
+          <li>Lists</li>
+          <li>Semantic HTML</li>
+        </ul>
+
+        <h4>💡 Tip</h4>
+        <p>Practice by building small pages. Start with structure first, then add styles with CSS.</p>
+      </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="section bottom-cta" aria-label="Next lesson">
+      <div class="next-step">
+        <div>
+          <h2 style="margin:0;">Ready for the next lesson?</h2>
+          <p class="muted" style="margin:0.4rem 0 0;">CSS Basics will teach you how to style the pages you just built.</p>
+        </div>
+        <div>
+          <button id="next-lesson" class="button primary full-width">Next Lesson — CSS Basics →</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p class="muted">Lesson 01 • HTML Basics</p>
+    </div>
+  </footer>
+
+  <!-- Inline JavaScript (keeps all logic inside this HTML file) -->
+  <script>
+    (function () {
+      // Helper: get code text from a code-block element
+      function getCodeText(codeBlock) {
+        var codeEl = codeBlock.querySelector('code');
+        return codeEl ? codeEl.textContent.trim() : '';
+      }
+
+      // Run examples: render sanitized HTML into preview areas
+      document.querySelectorAll('button.run').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var targetId = btn.getAttribute('data-target');
+          var codeBlock = btn.closest('.code-block');
+          if (!codeBlock) return;
+          var code = getCodeText(codeBlock);
+          var preview = document.getElementById(targetId);
+          if (!preview) return;
+
+          // Remove script tags for safety
+          var safe = code.replace(/<script[\s\S]*?>[\s\S]*?<\/script>/gi, '');
+          preview.innerHTML = safe;
+        });
+      });
+
+      // Copy code to clipboard with feedback
+      document.querySelectorAll('button.copy').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var target = btn.getAttribute('data-copy-target');
+          var codeBlock = document.querySelector('.code-block[data-code-id="' + target + '"]');
+          if (!codeBlock) return;
+          var code = getCodeText(codeBlock);
+
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(code).then(function () {
+              var original = btn.textContent;
+              btn.textContent = 'Copied';
+              setTimeout(function () { btn.textContent = original; }, 1400);
+            }, function () {
+              fallbackCopy(code, btn);
+            });
+          } else {
+            fallbackCopy(code, btn);
+          }
+        });
+      });
+
+      function fallbackCopy(text, btn) {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.left = '-9999px';
+        document.body.appendChild(ta);
+        ta.select();
+        try {
+          document.execCommand('copy');
+          var original = btn.textContent;
+          btn.textContent = 'Copied';
+          setTimeout(function () { btn.textContent = original; }, 1400);
+        } catch (e) {
+          alert('Copy failed. Select and copy manually.');
+        }
+        document.body.removeChild(ta);
+      }
+
+      // Next lesson button feedback
+      var nextBtn = document.getElementById('next-lesson');
+      if (nextBtn) {
+        nextBtn.addEventListener('click', function () {
+          nextBtn.disabled = true;
+          var prev = nextBtn.textContent;
+          nextBtn.textContent = 'Loading…';
+          setTimeout(function () {
+            nextBtn.disabled = false;
+            nextBtn.textContent = prev;
+            
+            location.href = 'css-basics.html';
+          }, 700);
+        });
+      }
+
+      // Auto-run the first example to show the page is interactive
+      var firstRun = document.querySelector('button.run');
+      if (firstRun) firstRun.click();
+    })();
+  </script>
+</body>
+</html>
