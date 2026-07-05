@@ -1,11 +1,11 @@
-# 🌐 Frontend Basics
+# 🌐 Code For Beginners
 
 <p align="center">
-  <img src="assets/course-preview.png" alt="Frontend Basics Preview" width="900">
+  <img src="assets/course-preview.png" alt="Code For Beginners Preview" width="900">
 </p>
 
 <p align="center">
-  <strong>An interactive learning website that teaches the fundamentals of HTML and CSS through beginner-friendly lessons, live examples, and hands-on practice.</strong>
+  <strong>Code For Beginners is a beginner-friendly educational website that teaches the fundamentals of HTML and CSS through interactive lessons, practical examples, and hands-on coding exercises.</strong>
 </p>
 
 <p align="center">
@@ -16,7 +16,7 @@
 
 ## 📖 About the Project
 
-**Frontend Basics** is an educational web project designed for beginners who want to learn the foundations of web development in a simple and interactive way.
+**Code For Beginners** is an educational web project designed for beginners who want to learn the foundations of web development in a simple and interactive way.
 
 Instead of overwhelming learners with long documentation, this project focuses on clear explanations, practical code examples, and immediate visual feedback. Every lesson is designed to help users understand not only *what* to write, but also *why* it works.
 
