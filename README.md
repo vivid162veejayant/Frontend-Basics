@@ -1,271 +1,167 @@
-![Code For Beginners Banner](Banner.png)
+# ![Code For Beginners Banner](Banner.png)
 
+# Code for Beginners
 
+**Code for Beginners** is a beginner-friendly educational website designed to teach the fundamentals of **HTML** and **CSS** through simple explanations, practical examples, and hands-on practice.
 
-                                                   Code for Beginners
+The project focuses on **learning by doing**, making web development approachable for anyone starting their programming journey.
 
-Code for Beginners is a simple educational website designed to help absolute beginners understand the fundamentals of HTML and CSS through clear explanations, examples, and hands-on practice.
+---
 
-This project focuses on learning by doing, making web development easy, structured, and approachable.
+# 📖 About the Project
 
----------------------------------------------------------------------------------------------------------------------------------
+This website is designed to help beginners understand:
 
-📌 What This Project Is About?
+- 🌐 What HTML is and how it structures a webpage
+- 🎨 What CSS is and how it styles HTML
+- 🔗 How HTML and CSS work together
+- 💻 Interactive "Try It Yourself" editors
+- 🧪 Practice challenges to reinforce learning
 
-This website explains:
+The goal is to build a strong foundation before moving on to more advanced web development concepts.
 
-What HTML is and how it structures a webpage
+---
 
-What CSS is and how it styles HTML
+# 📚 Website Sections
 
-How HTML and CSS work together
+## 🏠 Home
 
-Practice sections with “Try It Yourself” editors
+- Introduction to web development
+- Learning roadmap
+- Why HTML and CSS are important
+- Overview of the course
 
-Small challenges to build confidence step by step
+---
 
-The goal is to help beginners move from plain HTML to styled, readable webpages.
+## 📄 HTML Basics
 
----------------------------------------------------------------------------------------------------------------------------------
+Learn the building blocks of every webpage.
 
-🧱 Website Sections
+Topics include:
 
+- What is HTML?
+- HTML document structure
+- Headings
+- Paragraphs
+- Links
+- Images
+- Lists
+- Semantic HTML
 
-🏠 Home
+---
 
-What is web development?
+## 🎨 CSS Basics
 
-Why HTML and CSS are important
+Learn how to style webpages.
 
+Topics include:
 
+- What is CSS?
+- CSS Syntax
+- Selectors
+- Colors
+- Fonts
+- Backgrounds
+- Margin & Padding
+- Borders
+- External CSS
 
+---
 
+## 🔗 HTML + CSS Together
 
-📄 HTML Basics
+Understand how structure and styling work together.
 
-What HTML is
+This section explains:
 
-Common HTML tags
+- How CSS styles HTML
+- Before vs After examples
+- Why separating structure and design is important
 
-Simple explanations and examples
+---
 
+## 🧪 Try It Yourself
 
+Experiment directly in your browser using a simple live editor.
 
+Features:
 
+- HTML editor
+- CSS editor
+- Live preview
+- Reset button
 
+---
 
-🎨 CSS Basics
+## ✅ Practice
 
-What CSS is
+Test your understanding with beginner-friendly challenges.
 
-Colors, fonts, and backgrounds
+Examples:
 
-Internal vs External CSS
+- Change text color
+- Center a heading
+- Add a background color
+- Add a border
+- Add padding
 
+---
 
+## ℹ️ About
 
+Learn about:
 
+- Why this project was created
+- Who it is designed for
+- The learning philosophy behind it
 
+---
 
-🔗 HTML + CSS Together
+# 🎯 Who is this project for?
 
-How CSS styles HTML
+This project is intended for:
 
-Before and after styling explanation
+- Beginners learning HTML and CSS
+- Students starting web development
+- Anyone curious about how websites are built
 
-Why separation of structure and style matters
+No previous programming experience is required.
 
+---
 
+# 🧠 Learning Philosophy
 
+The website follows a simple teaching approach:
 
+- 📖 Simple explanations
+- 💡 Practical examples
+- 💻 Hands-on practice
+- 🎯 Learn one concept at a time
 
+The objective is to help learners build confidence by mastering the fundamentals first.
 
-🧪 Practice Section (Try It Yourself)
+---
 
-Live HTML & CSS editor
+# 🚧 Project Status
 
-Small challenges like:
+**This project is currently being revived and redesigned.**
 
-Change text color
+The original version is being rebuilt with:
 
-Center a heading
+- Cleaner code
+- Improved design
+- Better explanations
+- A more consistent learning experience
+- A modern and responsive interface
 
-Add a background color
+---
 
-Instant feedback using checkmarks and crosses
+# 🙌 Final Note
 
+> **HTML builds the structure.**
+>
+> **CSS brings it to life.**
+>
+> **Practice turns knowledge into skill.**
 
-
-
-
-
-
-
-ℹ️ About Us
-
-Purpose of the website
-
-Who it is for
-
-Learning approach and mission
-
-
-
-
----------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-📁 Project Structure
-
-Code-for-Beginners/
-
-│
-
-├── index.html
-
-├── Home.css
-
-│
-
-├── HTML-Basics.html
-
-├── HTML-Basics.css
-
-│
-
-├── CSS-Basics.html
-
-├── CSS-Basics.css
-
-│
-
-├── HTML-CSS-Together.html
-
-├── HTML-CSS-Together.css
-
-│
-
-├── Practice-Section/
-
-│   ├── practice.html
-
-│   ├── practice.css
-
-│   └── practice.js
-
-│
-
-├── About-Us.html
-
-├── About-Us.css
-
-│
-
-└── README.md
-
-
-
-
-
----------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-🎯 Who This Project Is For
-
-Absolute beginners in web development
-
-Students learning HTML and CSS
-
-Anyone curious about how websites are built
-
-No prior coding experience is required.
-
-
-
-
-
----------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-
-🧠 Learning Philosophy
-
-Simple language
-
-Clean layout
-
-Step-by-step explanations
-
-Practice-focused content
-
-The idea is to build strong fundamentals first.
-
-
-
-
-
-
----------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-🚀 Future Improvements (In Progress)
-
-Add JavaScript basics
-
-More practice challenges
-
-Dark mode toggle
-
-Make it Good on Mobiles
-
-Progress tracking
-
-
-
-
----------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-📜 License
-
-This project is created for learning and educational purposes.
-You are free to study, modify, and expand it.
-
-
-
-
----------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-🙌 Final Note
-
-HTML builds the page.
-CSS styles the page.
-Practice makes you confident.
-Please check the "Readme-Files" For More Information.
-
-HAPPY CODING!
-
-
-
-
-
-
-__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Happy Coding! 🚀
