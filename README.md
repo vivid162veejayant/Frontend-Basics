@@ -95,7 +95,7 @@ No frameworks or libraries were used. The project was intentionally built using 
 ## 📂 Project Structure
 
 ```text
-Frontend-Basics/
+Code For Beginners/
 │
 ├── assets/
 │   └── course-preview.png
@@ -131,7 +131,7 @@ The goal wasn't simply to build another website, but to create an engaging learn
 
 ## 🚀 Live Demo
 
-**https://vivid162veejayant.github.io/Frontend-Basics/**
+**https://vivid162veejayant.github.io/Code-For-Beginners/**
 
 ---
 
